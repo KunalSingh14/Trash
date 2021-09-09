@@ -1,6 +1,7 @@
 /* h1{
     color:red;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
 }
@@ -10,26 +11,126 @@
     height: 100vh;
 }
 .bg_image{
-    background-image: url(images/leaf.png);
-    width: 65%;
+    background-image: url("https://images.unsplash.com/photo-1550147760-44c9966d6bc7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80");
+    width: 70%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 .login{
     background-color: #D5FFAA;
-    width: 35%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .signup{
+    display: flex;
     margin-top: 15%;
     width: 60%;
     height: 60%;
     border-radius: 47px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background: white;
+    flex-direction: column;
+    
+}
+.iiit_logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.form{
+display: flex;
+flex-direction: column;
+height: 33%;
+justify-content: space-around;
+}
+    
+.moi{
+    margin-top: 5%;
+    margin-bottom: 25%;
+    height: 20%;
+    width: auto;
+}
+.uid_name{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    left: -30px;
+    top: 10px;
+    
+}
+.uid_no{
+    position: relative;
+    width: 140%;
+    height: 100%;
+    left: -37px;
+    border-radius:10px;
+    border: none;
+    background-color:#E4E3E3;
+    
+}
+.uid_no:focus{
+    outline: none;
+    border: none;
+}
+.btn_send:focus, .btn_send:active, .btn_send{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #6a6a6a;
+    position: relative;
+    left: 80px;
+}
+.btn_send:hover{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #1e1e1e;
+    position: relative;
+    left: 80px;
+}
+.btn_resend:focus, .btn_resend:active, .btn_resend{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #6a6a6a;
+    position: relative;
+    left: -80px;
+    top: 30px;
+}
+.btn_resend:hover{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    color: #1e1e1e;
+    position: relative;
+    left: -80px;
+    top: 30px;
+}
+.btn_verify {
+    position: relative;
+    width: 50%;
+    left: 110px;
+    top:12px;
+    background-color: #122f2b;
+    color:white;
+    border-radius:10px;
+    border: none;
+    outline: none;
+}
+h4{
+    font-family: 'Roboto', sans-serif;
+    color: #a2a2a2;
+    font-size: 12px;
+    font-weight: normal;
 }
 

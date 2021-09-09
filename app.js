@@ -7,7 +7,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
 
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/otp.html");
     // res.send("Server is up and running")
 })
 app.listen(3000, function () {
