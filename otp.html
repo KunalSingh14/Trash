@@ -18,12 +18,15 @@
             <div class="signup">
                 <img src="images/moi.png" alt="" class="moi">
                 <form action="/index.html" method="post" class="form">
-                    <label for="UID" class="uid_name">Aadhar No.</label>
+                    <label for="UID" class="uid_name">Enter OTP</label>
                     <br>
                     <input type="text" name="UID" id="UID" class="uid_no" minlength="12" maxlength="12" pattern=[0-9]
                         placeholder="  XXXX-XXXX-XXXX">
                     <br>
-                    <input type="submit" name="submit" value="Send OTP" id="submit" class="btn_send" />
+                    <h4>OTP has been sent to registerd<br> mobile number</h4>
+                    <br>
+                    <input type="submit" name="submit" value="Resend OTP" id="submit" class="btn_resend" />
+                    <input type="submit" name="verify" value="Verify" id="verify" class="btn_verify" />
                 </form>
             </div>
         </div>
