@@ -1,10 +1,35 @@
 /* h1{
     color:red;
 } */
+*{
+    margin: 0;
+}
 .container{
     display:flex;
     width: 100vw;
     height: 100vh;
 }
 .bg_image{
+    background-image: url(images/leaf.png);
+    width: 65%;
 }
+
+
+.login{
+    background-color: #D5FFAA;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup{
+    margin-top: 15%;
+    width: 60%;
+    height: 60%;
+    border-radius: 47px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
