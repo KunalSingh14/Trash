@@ -189,7 +189,7 @@ h4{
     color: #807F7F;
 }
 .nav-dash,.nav-Schemes,.nav-profile{
-    padding: 3.5%;
+    padding: 3%;
 }
 .body_container
 {
@@ -250,14 +250,17 @@ padding-bottom: 4%;
     font-size: 3vw;
 }
 .data70{
-    height:55%;
+    height:50%;
     width: 100%;
     /* background-color: black; */
 }
 .modi70{
-    height:35%;
+    height:40%;
     width: 100%;
     /* background-color: blue; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
 }
 hr{
     width: 90%;
@@ -307,7 +310,17 @@ font-size: 16px;
     height: 7%;
     width: 100%;
     background-color: #EFEFEE;
-    ;
     align-items: center;
     border-radius: 10px;
+}
+.swachimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.modiimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
