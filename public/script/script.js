@@ -4,11 +4,14 @@ let uid;
 document.getElementById("submit1").addEventListener("click", async () => {
     let myForm = document.getElementById("signUp");
     uid = myForm.elements["UID"].value;
-    if (!uids.includes(parseInt(uid))) alert("Invalid UID");
+    if (!uids.includes(parseInt(uid))) {
+        alert("Invalid UID");
+        return;
+    }
     myForm.innerHTML = `<label for="UID" class="uid_name">Enter OTP</label>
                     <br>
                     <input type="text" name="UID" id="UID" class="uid_no" minlength="12" maxlength="12" pattern=[0-9]
-                        placeholder="  XXXX-XXXX-XXXX">
+                        placeholder="  XXX">
                     <br>
                     <h4>OTP has been sent to registerd<br> mobile number</h4>
                     <br>
@@ -23,7 +26,10 @@ document.getElementById("submit1").addEventListener("click", async () => {
             if (item === parseInt(uid)) temp = index;
         });
         console.log(temp);
-        if (otps[temp] === parseInt(otp)) alert("Login Successful!!!");
+        if (otps[temp] === parseInt(otp)) {
+            alert("Login Successful!!!");
+            window.open("dashboard")
+        }
         else alert("Invalid OTP!!!");
     });
 });

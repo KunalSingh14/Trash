@@ -103,6 +103,16 @@ padding: 5%;
     /* position: relative; */
     left: 80px;
 }
+
+
+
+
+
+/* OTP PAGE */
+
+
+
+
 .btn_resend:focus, .btn_resend:active, .btn_resend{
     background: none;
     border: none;
@@ -141,3 +151,20 @@ h4{
     font-weight: normal;
 }
 
+
+/* Dashboard  */
+
+
+.nav-con{
+    display:flex;
+    width:100vw;
+    height:7vh;
+}
+.nav30{
+    width: 30vw;
+    background-color: #fff;
+}
+.nav70{
+    width: 70vw;
+    background-color: black;
+}
