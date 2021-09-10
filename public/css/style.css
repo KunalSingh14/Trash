@@ -198,6 +198,7 @@ h4{
     width:100vw;
     height:93vh;
     z-index: -1;
+    flex-direction: row;
 }
 .body30{
     display: flex;
@@ -276,7 +277,7 @@ hr{
 }
 
 .pi_title{
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 
 font-size: 16px;
