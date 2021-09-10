@@ -47,26 +47,31 @@
 .form{
 display: flex;
 flex-direction: column;
-height: 33%;
+height: 25%;
+width: 90%;
 justify-content: space-around;
+align-self: flex-start;
+padding: 5%;
+
 }
     
 .moi{
     margin-top: 5%;
     margin-bottom: 25%;
-    height: 20%;
-    width: auto;
+    height:auto;
+    width:95%;
 }
 .uid_name{
-    position: relative;
+    /* position: relative; */
+    align-self: flex-start;
     font-family: 'Roboto', sans-serif;
     left: -30px;
     top: 10px;
     
 }
 .uid_no{
-    position: relative;
-    width: 140%;
+    /* position: relative; */
+    width: 100%;
     height: 100%;
     left: -37px;
     border-radius:10px;
@@ -84,16 +89,18 @@ justify-content: space-around;
     outline: none;
     font-family: 'Roboto', sans-serif;
     color: #6a6a6a;
-    position: relative;
+    /* position: relative; */
     left: 80px;
+    align-self: flex-end;
 }
 .btn_send:hover{
+    align-self: flex-end;
     background: none;
     border: none;
     outline: none;
     font-family: 'Roboto', sans-serif;
     color: #1e1e1e;
-    position: relative;
+    /* position: relative; */
     left: 80px;
 }
 .btn_resend:focus, .btn_resend:active, .btn_resend{
