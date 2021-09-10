@@ -189,7 +189,7 @@ h4{
     color: #807F7F;
 }
 .nav-dash,.nav-Schemes,.nav-profile{
-    padding: 3.5%;
+    padding: 3%;
 }
 .body_container
 {
@@ -198,6 +198,7 @@ h4{
     width:100vw;
     height:93vh;
     z-index: -1;
+    flex-direction: row;
 }
 .body30{
     display: flex;
@@ -209,8 +210,8 @@ h4{
     flex-direction: column;
 }
 .title30{
-font-family: Roboto;
-font-style: normal;
+    font-family: Roboto;
+    font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 28px;
@@ -229,6 +230,46 @@ padding-bottom: 4%;
     justify-content: center;
     align-items: center;
 }
+.body70{
+    display: flex;
+    width:70vw;
+    height:93vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title70{
+    height:10%;
+    width: 100%;
+    /* padding-left: 5%;
+    padding-top: 3%; */
+}
+.wlcm-text{
+    padding-left: 5%;
+    margin-top: 2%;
+    font-size: 3vw;
+}
+.data70{
+    height:50%;
+    width: 100%;
+    /* background-color: black; */
+}
+.modi70{
+    height:40%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+}
+hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid none none;
+    margin-top: 1%;
+    color: #d2d2d2;
+}
 .pi_container{
     display: flex;
     flex-direction: row;
@@ -239,7 +280,7 @@ padding-bottom: 4%;
 }
 
 .pi_title{
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 
 font-size: 16px;
@@ -269,7 +310,17 @@ font-size: 16px;
     height: 7%;
     width: 100%;
     background-color: #EFEFEE;
-    ;
     align-items: center;
     border-radius: 10px;
+}
+.swachimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.modiimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
