@@ -9,6 +9,10 @@ app.get("/", function (req, res) {
     res.sendFile(__dirname + "/index.html");
     // res.send("Server is up and running")
 });
+app.get("/dashboard", function (req, res) {
+    res.sendFile(__dirname + "/dashboard.html");
+    // res.send("Server is up and running")
+});
 app.listen(3000, function () {
     console.log("Server started");
 });

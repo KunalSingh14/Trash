@@ -47,26 +47,31 @@
 .form{
 display: flex;
 flex-direction: column;
-height: 33%;
+height: 25%;
+width: 90%;
 justify-content: space-around;
+align-self: flex-start;
+padding: 5%;
+
 }
     
 .moi{
     margin-top: 5%;
     margin-bottom: 25%;
-    height: 20%;
-    width: auto;
+    height:auto;
+    width:95%;
 }
 .uid_name{
-    position: relative;
+    /* position: relative; */
+    align-self: flex-start;
     font-family: 'Roboto', sans-serif;
     left: -30px;
     top: 10px;
     
 }
 .uid_no{
-    position: relative;
-    width: 140%;
+    /* position: relative; */
+    width: 100%;
     height: 100%;
     left: -37px;
     border-radius:10px;
@@ -84,18 +89,30 @@ justify-content: space-around;
     outline: none;
     font-family: 'Roboto', sans-serif;
     color: #6a6a6a;
-    position: relative;
+    /* position: relative; */
     left: 80px;
+    align-self: flex-end;
 }
 .btn_send:hover{
+    align-self: flex-end;
     background: none;
     border: none;
     outline: none;
     font-family: 'Roboto', sans-serif;
     color: #1e1e1e;
-    position: relative;
+    /* position: relative; */
     left: 80px;
 }
+
+
+
+
+
+/* OTP PAGE */
+
+
+
+
 .btn_resend:focus, .btn_resend:active, .btn_resend{
     background: none;
     border: none;
@@ -134,3 +151,81 @@ h4{
     font-weight: normal;
 }
 
+
+/* Dashboard  */
+
+
+.nav-con{
+    display:flex;
+    width:100vw;
+    height:7vh;
+}
+.nav30{
+    width: 30vw;
+    background-color: #fff;
+    box-shadow: 1px 7px 15px -2px rgba(0, 0, 0, 0.25);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #807F7F;
+}
+.nav70{
+    width: 70vw;
+    background-color: #fff;
+    box-shadow: 1px 7px 15px -2px rgba(0, 0, 0, 0.25);
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #807F7F;
+}
+.nav-dash,.nav-Schemes,.nav-profile{
+    padding: 3.5%;
+}
+.body_container
+{
+    position:absolute;
+    display: flex;
+    width:100vw;
+    height:93vh;
+    z-index: -1;
+}
+.body30{
+    display: flex;
+    width:30vw;
+    height:93vh;
+    background-color:#D5FFAA;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title30{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+color: #000000;
+align-self: flex-start;
+padding-left: 10%;
+padding-bottom: 4%;
+}
+.content30{
+    width: 80%;
+    height: 74%;
+    background-color: #fafafa;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
