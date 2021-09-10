@@ -209,8 +209,8 @@ h4{
     flex-direction: column;
 }
 .title30{
-font-family: Roboto;
-font-style: normal;
+    font-family: Roboto;
+    font-style: normal;
 font-weight: bold;
 font-size: 18px;
 line-height: 28px;
@@ -228,4 +228,41 @@ padding-bottom: 4%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.body70{
+    display: flex;
+    width:70vw;
+    height:93vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title70{
+    height:10%;
+    width: 100%;
+    /* padding-left: 5%;
+    padding-top: 3%; */
+}
+.wlcm-text{
+    padding-left: 5%;
+    margin-top: 2%;
+    font-size: 3vw;
+}
+.data70{
+    height:55%;
+    width: 100%;
+    /* background-color: black; */
+}
+.modi70{
+    height:35%;
+    width: 100%;
+    /* background-color: blue; */
+}
+hr{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid none none;
+    margin-top: 1%;
+    color: #d2d2d2
 }
