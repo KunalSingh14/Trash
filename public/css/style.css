@@ -163,8 +163,69 @@ h4{
 .nav30{
     width: 30vw;
     background-color: #fff;
+    box-shadow: 1px 7px 15px -2px rgba(0, 0, 0, 0.25);
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #807F7F;
 }
 .nav70{
     width: 70vw;
-    background-color: black;
+    background-color: #fff;
+    box-shadow: 1px 7px 15px -2px rgba(0, 0, 0, 0.25);
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #807F7F;
+}
+.nav-dash,.nav-Schemes,.nav-profile{
+    padding: 3.5%;
+}
+.body_container
+{
+    position:absolute;
+    display: flex;
+    width:100vw;
+    height:93vh;
+    z-index: -1;
+}
+.body30{
+    display: flex;
+    width:30vw;
+    height:93vh;
+    background-color:#D5FFAA;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title30{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+color: #000000;
+align-self: flex-start;
+padding-left: 10%;
+padding-bottom: 4%;
+}
+.content30{
+    width: 80%;
+    height: 74%;
+    background-color: #fafafa;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
