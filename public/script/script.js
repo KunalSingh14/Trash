@@ -1,6 +1,29 @@
-const uids = [783104, 289394, 579320, 109573];
-const otps = [123, 345, 234, 765, 456];
-let uid;
+const uids = [];
+const otps = [];
+let uid, config;
+
+const getConfig = async () => {
+    const response = await fetch("env.json");
+    const data = await response.json();
+    config = data;
+};
+
+const getValidCredentials = async () => {
+    await getConfig();
+    const response = await fetch(config.API_BASE + "getValidCredentials");
+    const data = await response.json();
+    if (data.success === false) {
+        await getValidCredentials();
+        return;
+    } else {
+        data.result.forEach((element) => {
+            uids.push(parseInt(element.uid));
+            otps.push(element.otp);
+        });
+    }
+};
+
+getValidCredentials().catch((err) => console.log(err));
 
 const submitForm = async () => {
     let myForm = document.getElementById("signUp");
