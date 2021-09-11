@@ -26,8 +26,10 @@ document.getElementById("submit1").addEventListener("click", async () => {
         uids.forEach((item, index) => {
             if (item === parseInt(uid)) temp = index;
         });
-        if (otps[temp] === parseInt(otp)) alert("Login Successful!!!");
-        else {
+        if (otps[temp] === parseInt(otp)) {
+            localStorage.setItem("uid", uid);
+            window.location.href = "http://localhost:3000/dashboard";
+        } else {
             document.getElementById("temp2").innerHTML = `Invalid OTP`;
             return;
         }

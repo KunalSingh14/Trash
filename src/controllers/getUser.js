@@ -1,16 +1,17 @@
 const express = require("express");
 
-const User = require("../../models/user");
+const User = require("../models/user");
 
 const router = express.Router();
 
 // GET /getUser?id=bxjsakjxkwjb
 router.get("/getUser", async (req, res) => {
     try {
-        const user = await User.findById(req.body._id);
-        user = req.body;
-        user.save();
-        res.status(200).json({ success: true, result: user });
+        // const user = await User.findById(req.body._id);
+        // user = req.body;
+        // user.save();
+        // res.status(200).json({ success: true, result: user });
+        res.json({ name: "AnKiT" });
     } catch (e) {
         console.log(e);
         res.status(500).json({ success: false, error: e });
