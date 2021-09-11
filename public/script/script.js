@@ -28,6 +28,9 @@ document.getElementById("submit1").addEventListener("click", async () => {
         });
         if (otps[temp] === parseInt(otp)) {
             localStorage.setItem("uid", uid);
+            document.getElementById(
+                "mainContainer"
+            ).innerHTML = `<img src="images/modi.png" width = "100% height="100%"></img>`;
             window.location.href = "http://localhost:3000/dashboard";
         } else {
             document.getElementById("temp2").innerHTML = `Invalid OTP`;
