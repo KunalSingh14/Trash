@@ -13,6 +13,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         index: true,
+        unique: true,
     },
     photoUrl: String,
     otp: {

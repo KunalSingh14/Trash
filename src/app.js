@@ -15,6 +15,7 @@ const getUser = require("./controllers/getUser");
 const getValidCredentials = require("./controllers/getValidCredentials");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(uploadUser);
 app.use(updateUser);
 app.use(uploadCity);
