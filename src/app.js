@@ -24,6 +24,7 @@ app.use(getUser);
 
 app.listen(process.env.PORT || 8080, async () => {
     console.log(
-        "Server running at http://localhost:" + (process.env.PORT || 8080)
+        "Backend Server running at http://localhost:" +
+            (process.env.PORT || 8080)
     );
 });
