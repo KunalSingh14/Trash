@@ -11,9 +11,13 @@ const citySchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    aqi: {
+    rankChange: {
         type: Number,
         required: true,
+    },
+    aqi: {
+        type: Number,
+        // required: true,
     },
     bdWaste: {
         type: Number,
@@ -27,11 +31,11 @@ const citySchema = new mongoose.Schema({
     },
     drainageSystemScore: {
         type: Number,
-        required: true,
+        // required: true,
     },
     roadTrafficScore: {
         type: Number,
-        required: true,
+        // required: true,
     },
     treesPlanted: {
         type: Number,
@@ -72,7 +76,7 @@ const citySchema = new mongoose.Schema({
     },
     population: {
         type: Number,
-        required: true,
+        // required: true,
     },
 });
 
