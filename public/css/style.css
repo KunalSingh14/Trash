@@ -261,8 +261,16 @@ padding-bottom: 4%;
     width: 35%;
     height: 60%;
     background-color: red;
-    border:black;
 }
+.rule{
+    width: 1px;
+    height: 60%;
+    /* padding-right: 2%;
+    padding-left: 2%; */
+    background-color: #d2d2d2;
+    
+}
+
 .pi_chart_data{
     width: 55%;
     height: 60%;
