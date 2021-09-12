@@ -252,7 +252,21 @@ padding-bottom: 4%;
 .data70{
     height:50%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     /* background-color: black; */
+}
+.pi_chart{
+    width: 35%;
+    height: 60%;
+    background-color: red;
+    border:black;
+}
+.pi_chart_data{
+    width: 55%;
+    height: 60%;
+    background-color: blue;
 }
 .modi70{
     height:40%;
@@ -326,9 +340,20 @@ font-size: 16px;
     justify-content: flex-end;
 }
 
-.up{
+.ind{
     width: 10% ;
+   
     padding-right: 5%;
+}
+.up{
+    color: limegreen;
+}
+.down{
+    color: tomato;
+}
+.constant{
+    padding-bottom: 50%;
+    color: black;
 }
 .c{
     padding-left: 10% ;
