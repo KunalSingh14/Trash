@@ -138,6 +138,10 @@ const putUserData = (month) => {
         user.scores[month].wasteScore;
     document.getElementById("vehicle-score").innerText =
         user.scores[month].vehicleScore;
+    document.getElementById("wd").innerText = user.cityWD + " ton";
+    document.getElementById("aqi").innerText = user.cityAQI + " ppm";
+    document.getElementById("myCityRank").innerText =
+        "City Rank-" + user.cityRank;
 
     const a1 =
         user.scores[month].compensationScore / user.netScore[month].score;

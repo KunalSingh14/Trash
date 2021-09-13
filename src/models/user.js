@@ -24,6 +24,18 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    cityRank: {
+        type: Number,
+        required: true,
+    },
+    cityAQI: {
+        type: Number,
+        required: true,
+    },
+    cityWD: {
+        type: Number,
+        required: true,
+    },
     netScore: [
         {
             month: Number,
