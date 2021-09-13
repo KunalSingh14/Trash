@@ -31,6 +31,15 @@ const userSchema = new mongoose.Schema({
             score: Number,
         },
     ],
+    scores: [
+        {
+            month: Number,
+            year: Number,
+            compensationScore: Number,
+            vehicleScore: Number,
+            wasteScore: Number,
+        },
+    ],
     vehicles: [
         {
             month: Number,
