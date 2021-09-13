@@ -10,9 +10,10 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     uid: {
-        type: Number,
+        type: String,
         required: true,
         index: true,
+        unique: true,
     },
     photoUrl: String,
     otp: {
@@ -20,9 +21,16 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     city: {
-        type: mongoose.Types.ObjectId,
+        type: String,
         required: true,
     },
+    netScore: [
+        {
+            month: Number,
+            year: Number,
+            score: Number,
+        },
+    ],
     vehicles: [
         {
             month: Number,

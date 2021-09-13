@@ -1,14 +1,13 @@
 const express = require("express");
-
 const User = require("../models/user");
 
 const router = express.Router();
 
-// GET /getUser?uid=XXXXXXXXXXXXX
-router.get("/getUser", async (req, res) => {
+// GET /getValidCredentials
+router.get("/getValidCredentials", async (req, res) => {
     try {
-        const user = await User.findOne({ uid: req.query.uid });
-        res.status(200).json({ success: true, result: user });
+        const users = await User.find({}).select({ uid: 1, otp: 1 });
+        res.status(200).json({ success: true, result: users });
     } catch (e) {
         console.log(e);
         res.status(500).json({ success: false, error: e });
