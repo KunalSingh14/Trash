@@ -105,3 +105,36 @@ const driver = async () => {
 };
 
 driver().catch((err) => console.log(err));
+
+// pie-chart
+window.onload = function () {
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        // title: {
+        //     text: "Email Categories",
+        //     horizontalAlign: "left"
+        // },
+        data: [{
+            type: "doughnut",
+            startAngle: 60,
+            //innerRadius: 60,
+            indexLabelFontSize: 17,
+            // indexLabel: "{label} - #percent%",
+            // toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+            dataPoints: [
+                // { y: 67 },
+                // { y: 28 },
+                // { y: 10 },
+                // { y: 7 },
+                // { y: 15 },
+                // { y: 6 }
+                { y: 67, label: "Compensation" },
+                { y: 28, label: "Waste disposal" },
+                { y: 5, label: "Vehicle Maintainance" }
+            ]
+        }]
+    });
+    chart.render();
+
+}
