@@ -13,6 +13,9 @@ app.get("/dashboard", function (req, res) {
     res.sendFile(__dirname + "/dashboard.html");
     // res.send("Server is up and running")
 });
+app.get("/schemes",function(req,res){
+    res.sendFile(__dirname+"/schemes.html")
+});
 app.listen(3000, function () {
     console.log("Server started");
 });

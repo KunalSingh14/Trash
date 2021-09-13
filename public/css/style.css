@@ -501,3 +501,71 @@ font-size: 18px;
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+
+
+
+  /* Schemes page */
+  .schemes{
+      padding-top: 10%;
+      display: flex;
+      justify-content: space-between;
+      height: 50%;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+  }
+  .scheme{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 10%;
+      width: 70%;
+  }
+
+  .sdata{
+      /* padding: 10%; */
+    width: 50%;
+    justify-self: flex-start;
+  }
+ 
+  .application{
+      background-color: #EBEBEB;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 10%;
+      width: 70%;
+  }
+
+  .adata{
+    width: 50%;
+    justify-self: flex-start;
+  }
+
+  .astatus{
+      width: 20%;
+      
+  }
+
+  
+  .body70_schemes{
+      /* justify-content: space-around; */
+      display: flex;
+    width:70vw;
+    height:93vh;
+    /* justify-content: center; */
+   
+    flex-direction: column;
+    }
+    .scheme_dropdown{
+        height: 5%;
+        width: 80%;
+        background-color: red;
+    }
+    
+    .title70_schemes{
+          align-self: flex-start;
+          justify-self: flex-start;
+    }
+  
