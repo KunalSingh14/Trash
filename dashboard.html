@@ -21,15 +21,14 @@
             </div>
             <div class="nav70">
                 <div class="nav-dash"><span style="color: #c8c6c6">Dashboard</span></div>
-                <div class="nav-Schemes"><a href="/schemes"> Schemes</a></div>
-                <div class="nav-profile dropdown"><button onclick="myFunction()" class="dropbtn"><span
-                            onclick="myFunction()" class="material-icons"
-                            style="font-size:34px;padding-top:10px">account_circle<span></button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
+                <div class="nav-Schemes">Schemes</div>
+                <div class="nav-profile dropdown"><span onclick="myFunction()" class="material-icons dropbtn"
+                        style="font-size:34px;padding-top:10px; color: #9c9c9c;">account_circle<span></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
                 </div>
             </div>
         </div>
@@ -45,7 +44,7 @@
                         Performance Index
                     </div>
                     <div class="city-con">
-                        <div class="pi_data">City
+                        <div class="pi_data" id = "city/state">City
                         </div>
                         <div id="state-city-selector"><span class="material-icons-outlined dropdown-icon">
                                 swap_horiz
@@ -128,7 +127,15 @@
         </div>
         <div class="body70">
             <div class="title70"><br><span class="wlcm-text" id="id101">Hi, </span>
-                <hr>
+            </div>
+            <hr>
+            <div class="filter-data">
+                <div class="filter-con">
+                    <div class="filter" id="this/prev">This month</div>
+                    <div id="month-selector"><span class="material-icons-outlined dropdown-icon2">
+                            swap_horiz
+                        </span></div>
+                </div>
             </div>
             <div class="data70">
                 <div class="pi_chart">
