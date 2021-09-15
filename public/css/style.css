@@ -504,11 +504,13 @@ font-size: 18px;
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    width: 60px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 5%;
+    background-color: #cecece;
+    width: 1000px;
+    height: 100px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
-    align-self: flex-end;
+    
   }
   
   /* Links inside the dropdown */
@@ -516,7 +518,7 @@ font-size: 18px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    /* display: block; */
     font-size: 12px;
   }
   
@@ -524,7 +526,17 @@ font-size: 18px;
   .dropdown-content a:hover {background-color: #ddd}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  .show {display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.one{
+/*     
+    width: 100%; */
+}
 
 
 

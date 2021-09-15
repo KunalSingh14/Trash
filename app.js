@@ -33,6 +33,7 @@ app.get("/schemes", function (req, res) {
     res.sendFile(__dirname + "/schemes.html");
 });
 
+
 app.use(uploadUser);
 app.use(updateUser);
 app.use(uploadCity);
