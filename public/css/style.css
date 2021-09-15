@@ -194,6 +194,20 @@ h4{
 .nav-dash,.nav-Schemes,.nav-profile{
     padding: 3%;
 }
+
+.nav-Schemes a,.nav-Schemes a:visited{
+    color :#807F7F;
+    text-decoration: none;
+}
+
+.score{
+    font-size: 23px;;
+    padding-left: 5%;
+    width: 62%;
+    align-self: center;
+    justify-self: flex-start;
+}
+
 .body_container
 {
     position:absolute;
