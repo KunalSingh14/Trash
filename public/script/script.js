@@ -61,7 +61,7 @@ const submitForm = async () => {
             document.getElementById(
                 "mainContainer"
             ).innerHTML = `<img src="images/modi.png" width = "100% height="100%"></img>`;
-            window.location.href = "http://localhost:3000/dashboard";
+            window.location.href = config.API_BASE + "dashboard";
         } else {
             document.getElementById("temp2").innerHTML = `Invalid OTP`;
             return;
@@ -81,7 +81,7 @@ const submitForm = async () => {
                 document.getElementById(
                     "mainContainer"
                 ).innerHTML = `<img src="images/modi.png" width = "100% height="100%"></img>`;
-                window.location.href = "http://localhost:3000/dashboard";
+                window.location.href = config.API_BASE + "dashboard";
             } else {
                 document.getElementById("temp2").innerHTML = `Invalid OTP`;
                 return;

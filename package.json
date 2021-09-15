@@ -4,7 +4,7 @@
     "description": "Project for Hack4earth",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon app.js -e js,html,css & nodemon src/app.js"
+        "start": "node app.js"
     },
     "author": "Team Trash",
     "license": "ISC",
