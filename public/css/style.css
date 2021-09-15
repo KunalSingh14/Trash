@@ -572,7 +572,8 @@ font-size: 18px;
       height: 3em;
       width: 10em;
       border: none;
-      
+      background-color: #ffffff;
+      border-radius: 10px;
   }
 
   
@@ -600,11 +601,13 @@ font-size: 18px;
       width: 8em;
       background-color:#cdcccc;
       border: none;
+      border-radius: 5px;
     }
     .Apply{
         height: 3em;
         width: 8em;
         background-color:#d5ffaa;
         border: none;
+        border-radius: 5px;
   }
   
