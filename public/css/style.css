@@ -208,7 +208,9 @@ h4{
     color :#807F7F;
     text-decoration: none;
 }
-
+.nav-Scheme{
+    padding: 3%;
+}
 .score{
     font-size: 23px;;
     padding-left: 5%;
