@@ -35,7 +35,7 @@ const submitForm = async () => {
     myForm.innerHTML = `<label for="UID" class="uid_name">Enter OTP</label>
                     <br>
                     <input type="password" name="UID" id="UID_2" class="uid_no"
-                        placeholder="  - - - -">
+                        placeholder="  - - - - - -">
                     <br>
                     <h4 id="temp2">OTP has been sent to registerd<br> mobile number</h4>
                     <br>
