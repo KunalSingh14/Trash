@@ -5,14 +5,13 @@ let states = [];
 let uid = localStorage.getItem("uid");
 // localStorage.removeItem("uid");
 
-if (!uid) {
-    window.location.href = config.API_BASE;
-}
-
 const getConfig = async () => {
     const response = await fetch("env.json");
     const data = await response.json();
     config = data;
+    if (!uid) {
+        window.location.href = config.API_BASE;
+    }
 };
 
 const getUserData = async () => {
