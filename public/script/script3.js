@@ -98,58 +98,13 @@ const putStateData = () => {
     });
 };
 
-// pie-chart
-const loadChart = (angle1, angle2, angle3) => {
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        // title: {
-        //     text: "Email Categories",
-        //     horizontalAlign: "left"
-        // },
-        data: [
-            {
-                type: "doughnut",
-                startAngle: 60,
-                //innerRadius: 60,
-                indexLabelFontSize: 17,
-                // indexLabel: "{label} - #percent%",
-                // toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-                dataPoints: [
-                    // { y: 67 },
-                    // { y: 28 },
-                    // { y: 10 },
-                    // { y: 7 },
-                    // { y: 15 },
-                    // { y: 6 }
-                    { y: angle1, label: "Compensation" },
-                    { y: angle2, label: "Waste disposal" },
-                    { y: angle3, label: "Vehicle Maintainance" },
-                ],
-            },
-        ],
-    });
-    chart.render();
-};
-
 const putUserData = (month) => {
-    document.getElementById("comp-score").innerText =
-        user.scores[month].compensationScore;
-    document.getElementById("waste-score").innerText =
-        user.scores[month].wasteScore;
-    document.getElementById("vehicle-score").innerText =
-        user.scores[month].vehicleScore;
     document.getElementById("wd").innerText = user.cityWD + " ton";
     document.getElementById("aqi").innerText = user.cityAQI + " ppm";
     document.getElementById("myCityRank").innerText =
         "City Rank-" + user.cityRank;
     document.getElementById("total-score-individual").innerText =
         "Score:" + user.netScore[month].score;
-
-    const a1 =
-        user.scores[month].compensationScore / user.netScore[month].score;
-    const a2 = user.scores[month].wasteScore / user.netScore[month].score;
-    const a3 = user.scores[month].vehicleScore / user.netScore[month].score;
-    loadChart(a1 * 100, a2 * 100, a3 * 100);
 };
 
 const getData = async () => {
@@ -170,16 +125,6 @@ const swapStateCity = () => {
     }
 };
 
-const swapMonths = () => {
-    if (document.getElementById("this/prev").innerText === "This Month") {
-        document.getElementById("this/prev").innerText = "Previous Month";
-        putUserData(0);
-    } else {
-        document.getElementById("this/prev").innerText = "This Month";
-        putUserData(1);
-    }
-};
-
 const driver = async () => {
     await getConfig();
     await getData();
@@ -188,11 +133,6 @@ const driver = async () => {
     document
         .getElementById("state-city-selector")
         .addEventListener("mouseup", swapStateCity);
-
-    // Swap between This Month<->Previous Month
-    document
-        .getElementById("month-selector")
-        .addEventListener("mouseup", swapMonths);
 };
 
 driver().catch((err) => console.log(err));
