@@ -21,18 +21,6 @@ app.use(cors({ origin: config.CORS_ORIGIN }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
-    // res.send("Server is up and running")
-});
-app.get("/dashboard", function (req, res) {
-    res.sendFile(__dirname + "/dashboard.html");
-    // res.send("Server is up and running")
-});
-app.get("/schemes", function (req, res) {
-    res.sendFile(__dirname + "/schemes.html");
-});
-
 app.use(uploadUser);
 app.use(updateUser);
 app.use(uploadCity);
@@ -44,6 +32,18 @@ app.use(getUser);
 app.use(getValidCredentials);
 app.use(getCities);
 app.use(getStates);
+
+app.get("/", function (req, res) {
+    res.sendFile(__dirname + "/index.html");
+    // res.send("Server is up and running")
+});
+app.get("/dashboard", function (req, res) {
+    res.sendFile(__dirname + "/dashboard.html");
+    // res.send("Server is up and running")
+});
+app.get("/schemes", function (req, res) {
+    res.sendFile(__dirname + "/schemes.html");
+});
 
 app.listen(process.env.PORT || 3000, async () => {
     console.log("Server running on port " + (process.env.PORT || 3000));

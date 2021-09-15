@@ -5,6 +5,9 @@ let states = [];
 let uid = localStorage.getItem("uid");
 // localStorage.removeItem("uid");
 
+if (!uid) {
+    window.location.href = config.API_BASE;
+}
 const getConfig = async () => {
     const response = await fetch("env.json");
     const data = await response.json();
@@ -133,6 +136,12 @@ const driver = async () => {
     document
         .getElementById("state-city-selector")
         .addEventListener("mouseup", swapStateCity);
+
+    // Sign Out
+    document.getElementById("signout").addEventListener("click", () => {
+        localStorage.removeItem("uid");
+        window.location.href = config.API_BASE;
+    });
 };
 
 driver().catch((err) => console.log(err));
